@@ -12747,6 +12747,7 @@ export const VALID_GUESSES = [
   'tyne193',
   'tyneyd ',
   'tynevir',
+  'tynhjn ',
   'tysl   ',
   'tyslrws',
   'tyslyjm',
