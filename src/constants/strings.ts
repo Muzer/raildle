@@ -1,4 +1,4 @@
-export const GAME_TITLE = 'Raildle'
+export const GAME_TITLE = 'Traindle'
 
 export const WIN_MESSAGES = ['Hellfire!', 'My Lordz!', 'Dreadful!']
 export const GAME_COPIED_MESSAGE = 'Game copied to clipboard'
