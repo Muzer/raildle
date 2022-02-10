@@ -22,6 +22,7 @@ import {
 } from './constants/strings'
 import {
   MAX_WORD_LENGTH,
+  MIN_WORD_LENGTH,
   MAX_CHALLENGES,
   ALERT_TIME_MS,
   REVEAL_TIME_MS,
@@ -129,14 +130,16 @@ function App() {
     if (isGameWon || isGameLost) {
       return
     }
-    if (!(currentGuess.length === MAX_WORD_LENGTH)) {
+    if (currentGuess.length < MIN_WORD_LENGTH) {
       setIsNotEnoughLetters(true)
       return setTimeout(() => {
         setIsNotEnoughLetters(false)
       }, ALERT_TIME_MS)
     }
+    const paddedGuess = currentGuess.padEnd(MAX_WORD_LENGTH, ' ')
+    setCurrentGuess(paddedGuess)
 
-    if (!isWordInWordList(currentGuess)) {
+    if (!isWordInWordList(paddedGuess)) {
       setIsWordNotFoundAlertOpen(true)
       return setTimeout(() => {
         setIsWordNotFoundAlertOpen(false)
@@ -150,14 +153,14 @@ function App() {
       setIsRevealing(false)
     }, REVEAL_TIME_MS * MAX_WORD_LENGTH)
 
-    const winningWord = isWinningWord(currentGuess)
+    const winningWord = isWinningWord(paddedGuess)
 
     if (
-      currentGuess.length === MAX_WORD_LENGTH &&
+      paddedGuess.length === MAX_WORD_LENGTH &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon
     ) {
-      setGuesses([...guesses, currentGuess])
+      setGuesses([...guesses, paddedGuess])
       setCurrentGuess('')
 
       if (winningWord) {
