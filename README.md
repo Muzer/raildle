@@ -1,6 +1,6 @@
-# React Wordle
+# Raildle
 
-This is a clone project of the popular word guessing game we all know and love. Made using React, Typescript, and Tailwind.
+This is a fork of reactle, to allow users to guess railway TIPLOC codes.
 
 [**Try out the demo!**](https://reactle.vercel.app/)
 
@@ -11,7 +11,7 @@ This is a clone project of the popular word guessing game we all know and love. 
 Clone the repository and perform the following command line actions:
 
 ```bash
-$> cd react-wordle
+$> cd raildle
 $> npm install
 $> npm run start
 ```
@@ -24,38 +24,6 @@ $> docker run -d -p 3000:3000 game
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in browser.
-
-## Projects built using this repo
-
-### Other languages
-
-- [Latindictionary.io](https://wordle.latindictionary.io/): Latin
-- [Kelmaly](https://kelmaly.com/): Arabic
-- [Arwordle](https://arwordle.netlify.app/): Arabic
-- [Wörtchen](https://woertchen.sofacoach.de): German
-- [Vārdulis](wordle.lielakeda.lv/): Latvian
-- [꼬들 - 한국어](https://belorin.github.io/): Korean
-- [한글 풀어쓰기 5자](https://nakosung.github.io/wordle/): Korean
-- [Urdle](https://urdle.chaoticity.com/): Urdu
-
-### Fun themes
-
-- [Murdle](https://murdle.vercel.app/): Spooky hangman mashup
-- [Taylordle](https://www.taylordle.com/): Taylor Swift
-- [Dundle](https://dundle.dunmiffcord.com/): The Office
-- [Weedel](https://meetmeinouter.space/wordle/): Video game characters
-- [JoJodle](https://jojo-news.com/fun/jojodle/): JoJo’s Bizarre Adventure
-
-### Math, Acronyms, and more
-
-- [Primel](https://converged.yt/primel/): Prime numbers
-- [Syscordle](https://nezza.github.io/syscordle/): SYSCALL
-- [Mathler](https://www.mathler.com/): Find the solution that equals X
-- [Stockle](https://stockle.win/): Guess the stock or ETF
-- [AI-powered](https://github.com/asirota/wordle-ai): Includes an AI component
-- [Passwordle](https://passwordle.sp8c3.com/): Passwords
-
-_Want to add one to the list? Just make a pull request or [let us know via a comment here](https://github.com/cwackerfuss/react-wordle/issues/120)_
 
 ## FAQ
 
